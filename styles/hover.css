@@ -49,9 +49,9 @@
 .white{
     color: #fff!important;
 }
-
-.fotorama{
-    -webkit-background-size: cover;
+.snapshots-content{
+    background: url('/images/snapshots/1_full_low.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;

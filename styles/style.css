@@ -1,3 +1,8 @@
+body, html, .fotorama{
+    height: 100%;
+}
+
+
 .page-header a{
     text-decoration: none;
     color: #000;
@@ -11,11 +16,18 @@
 .page-header{
     border:none !important;
     margin: 40px 0 0px !important;
-
+    
+}
+.snapshots-page .page-header{
+    position: absolute;    
+    z-index: 100;
 }
 
 h4{
     font-size: 12.5px !important;
+}
+ p{
+ font-size: 12.5px;
 }
 
 /*navbar*/
@@ -88,7 +100,9 @@ body{
 }
 
 /*Content Pages*/
-
+.fotorama-wrap-frontpage{
+    position: relative;
+}
 
 .footer-content{
     margin-left: 2em;
@@ -104,13 +118,32 @@ body{
 .dotted{
     border-top: 1px dashed; 
 }
+.test1, test2{
+    width: 80%;
+    height: 80%;
+    position: fixed;
+}
+
+.wrapped{
+    width:50%;
+    height: 50%;
+}
+
+/*Snapshots page*/
+.white{
+    color: #fff!important;
+}
+.snapshots-footer{
+    z-index: 100;
+    margin-top: -6em;
+}
 
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
     .navbar-fixed-bottom{
         position: relative !important;
         left:-25px !important;

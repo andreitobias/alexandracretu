@@ -1,40 +1,38 @@
 $( document ).ready(function() {
-
-
-var addWhite = $( ".page-header, .footer, a" ).addClass( "white" );
-var removeWhite = $( ".page-header, .footer, a" ).removeClass( "white" );
-  
-$('#projects').click(function(sublist) {
+    
+$div =$('<div>')
+$('<img>').addClass('responsive');
+$( "#projects" ).click(function(sublist) {
     
 $('.sublist').slideToggle();
 
 });
 
-    $('#projects').mouseenter(function() {
+    $( "#projects" ).mouseenter(function(x,y) {
         $( ".wrapper" ).addClass( "projects" );
-        addWhite;
+        $( ".page-header, .footer, a" ).addClass( "white" );
     })    
     .mouseleave(function() {
         $( ".wrapper" ).removeClass( "projects" );
-        removeWhite;
+        $( ".page-header, .footer, a" ).removeClass( "white" );
 });
 
     $( "#remember" ).mouseenter(function() {
         $( ".wrapper" ).addClass( "projects" );
-       addWhite;
+        $( ".page-header, .footer,  a" ).addClass( "white" );
     })    
     .mouseleave(function() {
         $( ".wrapper" ).removeClass( "projects" );
-        removeWhite;
+        $( ".page-header, .footer, a" ).removeClass( "white" );
 });
 
 $( "#home" ).mouseenter(function() {
         $( ".wrapper" ).addClass( "home" );
-        addWhite; 
+        $( ".page-header, .footer, a" ).addClass( "white" );
     })    
     .mouseleave(function() {
         $( ".wrapper" ).removeClass( "home" );
-        removeWhite;
+        $( ".page-header, .footer, a" ).removeClass( "white" );
 });
 
 $( "#aproximately" ).mouseenter(function() {
@@ -53,11 +51,11 @@ $( "#untitled" ).mouseenter(function() {
 
 $( "#snapshots" ).mouseenter(function() {
         $( ".wrapper" ).addClass( "snapshots" );
-        addWhite; 
+        $( ".page-header, .footer, a" ).addClass( "white" );
     })    
     .mouseleave(function() {
         $( ".wrapper" ).removeClass( "snapshots" );
-        removeWhite;
+        $( ".page-header, .footer, a" ).removeClass( "white" );
 });
 
 $( "#zines" ).mouseenter(function() {
@@ -70,4 +68,3 @@ $( "#zines" ).mouseenter(function() {
 
 
 });
-
